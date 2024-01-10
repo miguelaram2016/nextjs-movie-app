@@ -5,7 +5,7 @@ import SearchIcon from '../../../public/search.svg';
 import MovieCard from './MovieCard.jsx'
 
 const MovieLand = () => {
-  const API_KEY = "84fd5290";
+  const API_KEY = process.env.NEXT_PUBLIC_OMDB_API_KEY;
   const API_URL = `http://www.omdbapi.com/?apikey=${API_KEY}`;
 
   const [movies, setMovies] = useState([]);
